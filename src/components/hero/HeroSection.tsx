@@ -11,24 +11,31 @@ const HeroSection = () => {
       />
       
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 bg-white/65" />
+      
+      {/* Logo in top corner */}
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20 p-6">
+        <img 
+          src="/Nomadic Trails Scout.png" 
+          alt="Nomadic Trails Scout Logo" 
+          className="h-10 md:h-12 lg:h-16 w-auto"
+        />
+      </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
+      <div className="relative z-10 container mx-auto px-4 py-12 text-center">
+        <div className="max-w-4xl mx-auto space-y-6">
+          
           {/* Main Headline */}
-          <h1 className="font-onest font-bold text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight">
+          <h1 className="font-onest font-bold text-6xl text-foreground leading-tight" style={{ fontSize: '58px' }}>
             Work.{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Travel.
-            </span>{" "}
-            <span className="text-primary">Belong.</span>
+            <span style={{ color: '#27A6AA' }}>Travel.</span>{" "}
+            <span style={{ color: '#27A6AA' }}>Belong.</span>
           </h1>
           
           {/* Subtext */}
-          <p className="font-onest text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A new way for digital nomads to explore the world while staying connected. 
-            We're launching soon, be the first to know.
+          <p className="font-onest max-w-3xl mx-auto leading-relaxed whitespace-nowrap" style={{ fontSize: '20px', color: 'rgba(0, 0, 0, 0.6)' }}>
+            A new way for Digital nomads to travel + stay connected - Launching soon.
           </p>
           
           {/* Email Signup Form */}
