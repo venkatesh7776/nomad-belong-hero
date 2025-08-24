@@ -51,7 +51,7 @@ const EmailSignupForm = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="flex-1 font-onest text-base h-12 bg-card border-border shadow-soft focus-visible:ring-primary"
+          className="flex-1 font-onest text-base h-24 md:h-12 bg-card border-border shadow-soft focus-visible:ring-primary"
           disabled={isLoading}
         />
         <Button 
@@ -60,6 +60,7 @@ const EmailSignupForm = () => {
           size="lg"
           disabled={isLoading}
           className="h-12 px-8 whitespace-nowrap"
+          style={{ backgroundColor: '#E47035', borderColor: '#E47035' }}
         >
           {isLoading ? "Joining..." : "Notify Me"}
         </Button>
